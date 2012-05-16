@@ -54,7 +54,7 @@ Proguard Demo for the Cincy Android Dev Group
 ### Initial Template
 
 ```
-`#Remove all the injar/outjar/libraryjar junk, the android ant script takes care of this
+#Remove all the injar/outjar/libraryjar junk, the android ant script takes care of this
 
 -dontpreverify
 -repackageclasses ''
