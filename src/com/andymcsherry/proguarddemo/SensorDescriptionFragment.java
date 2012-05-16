@@ -1,5 +1,7 @@
 package com.andymcsherry.proguarddemo;
 
+import java.lang.reflect.Method;
+
 import android.hardware.Sensor;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -22,10 +24,23 @@ public class SensorDescriptionFragment extends Fragment {
 	public void onActivityCreated(Bundle state) {
 		super.onActivityCreated(state);
 		updateFields((SensorData) getArguments().getSerializable(KEY_SENSOR_DATA));
+		
+		/*
+		 * Keep things that are being reflected upon, proguard claims
+		 * they account for this but it doesn't really work.
+		 * Be specific and only keep what is necessary though!
+		 */
+		try {
+			Class<? extends SensorDescriptionFragment> klass = this.getClass();
+			Method method = klass.getMethod("updateFields", SensorData.class);
+			method.invoke(this, getArguments().getSerializable(KEY_SENSOR_DATA));
+		} catch (Exception e) {
+			throw new RuntimeException("Proguard must have removed my reflected method!", e);
+		}
 	}
 
 	@SuppressWarnings("deprecation")
-	private void updateFields(SensorData sensorData) {
+	public void updateFields(SensorData sensorData) {
 		((TextView)getView().findViewById(R.id.sensor_name)).setText(sensorData.name);
 		((TextView)getView().findViewById(R.id.version)).setText(String.valueOf(sensorData.version));
 		((TextView)getView().findViewById(R.id.vendor_name)).setText(sensorData.vendor);
