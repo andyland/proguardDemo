@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:alignmentMode="alignBounds"
+    app:columnCount="2"
+    app:columnOrderPreserved="false"
+    app:useDefaultMargins="true" >
+
+    <TextView
+        app:layout_columnSpan="1"
+        android:layout_gravity="center_vertical|left"
+        android:text="Sensor Name: "
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/sensor_name"
+        app:layout_columnSpan="1"
+        android:layout_gravity="center_vertical|left"
+        android:textSize="14dip" />
+
+    <TextView
+        app:layout_columnSpan="1"
+        android:layout_gravity="center_vertical|left"
+        android:text="Vendor: "
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/vendor_name"
+        app:layout_columnSpan="1"
+        android:layout_gravity="center_vertical|left"
+        android:textSize="14dip" />
+
+    <TextView
+        app:layout_columnSpan="1"
+        android:layout_gravity="center_vertical|left"
+        android:text="Version "
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/version"
+        app:layout_columnSpan="1"
+        android:layout_gravity="center_vertical|left"
+        android:textSize="14dip" />
+
+    <TextView
+        app:layout_columnSpan="1"
+        android:layout_gravity="center_vertical|left"
+        android:text="Type: "
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/type"
+        app:layout_columnSpan="1"
+        android:layout_gravity="center_vertical|left"
+        android:textSize="14dip" />
+
+    <TextView
+        app:layout_columnSpan="1"
+        android:layout_gravity="center_vertical|left"
+        android:text="Required Power: "
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/power"
+        app:layout_columnSpan="1"
+        android:layout_gravity="center_vertical|left"
+        android:textSize="14dip" />
+
+    <TextView
+        app:layout_columnSpan="1"
+        android:layout_gravity="center_vertical|left"
+        android:text="Range: "
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/range"
+        app:layout_columnSpan="1"
+        android:layout_gravity="center_vertical|left"
+        android:textSize="14dip" />
+
+    <TextView
+        app:layout_columnSpan="1"
+        android:layout_gravity="center_vertical|left"
+        android:text="Delay: "
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/delay"
+        app:layout_columnSpan="1"
+        android:layout_gravity="center_vertical|left"
+        android:textSize="14dip" />
+    
+    <Button
+        android:text="Go Back"
+        app:layout_columnSpan="2"
+        android:layout_gravity="center"
+        android:onClick="goBackButtonClicked" />
+
+</android.support.v7.widget.GridLayout>
