@@ -20,7 +20,7 @@ Proguard Demo for the Cincy Android Dev Group
 
 ### Syntax
 * <http://proguard.sourceforge.net/#manual/usage.html>
-* `# is used for comments
+* \# is used for comments
 * Always use fully-qualified class names
 
 ### Reflection
@@ -146,4 +146,10 @@ public void *ButtonClicked(android.view.View);
     native <methods>;
 }
 ```
+
+### Deobfuscating Stack Traces
+* Save mapping.txt from any build released
+* retrace.sh/bat is in sdk.dir/tools/proguard/bin
+* Best, no free plans. <http://www.hockeyapp.net/>
+* Free plans, but very limited. <http://www.bugsense.com/>
 
