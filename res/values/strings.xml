@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="next_screen">Next screen</string>
+    <string name="page">Page %1$d</string>
+    <string name="app_name">ProguardDemo</string>
+
+</resources>
