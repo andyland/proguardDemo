@@ -150,6 +150,6 @@ public void *ButtonClicked(android.view.View);
 ### Deobfuscating Stack Traces
 * Save mapping.txt from any build released
 * retrace.sh/bat is in sdk.dir/tools/proguard/bin
-* Best, no free plans. <http://www.hockeyapp.net/>
-* Free plans, but very limited. <http://www.bugsense.com/>
+* No free plans, great product though. <http://www.hockeyapp.net/>
+* Free plans, but very limited.  Open source projects have more robust free plans. <http://www.bugsense.com/>
 
