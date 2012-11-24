@@ -1,7 +1,7 @@
 Proguard Demo
 ============
 
-Proguard Demo for the Cincy Android Dev Group
+Proguard Demo for the Cincy Android Dev Group by [Andy McSherry](http://www.andymcsherry.com)
 
 ### Useful Links
 
